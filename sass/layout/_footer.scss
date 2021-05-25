@@ -1,0 +1,60 @@
+.footer { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0rem;
+  background-color: $brighten-1;
+
+  &__links { 
+    display: flex;
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem 0rem;
+    
+    &--left { 
+      justify-content: flex-end;
+    }
+
+    &--right{ 
+      justify-content: flex-start;
+    }
+  }
+
+  &__link {
+    margin-bottom: 8px;
+    padding: .2rem 1rem;
+    font-size: 1.4rem;
+    color: $link-color-dark;
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  &__logo-box { background-color: $color-prim-dark;
+    height: 1rem;
+    width: 1rem;
+
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+  }
+
+  &__logo {
+
+  }
+
+  &__copy-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__copy {
+    padding: 2rem;
+    font-size: 1.3rem;
+  }
+
+}

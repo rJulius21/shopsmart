@@ -1,0 +1,9 @@
+.main { 
+  position: relative;
+  margin-top: 9rem;
+  display: flex;
+
+  &--flex-c {
+    flex-direction: column;
+  }
+}

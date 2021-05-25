@@ -1,0 +1,47 @@
+.single-reviews {
+  overflow-y: auto;
+  border-radius: $bor-rad-sm; 
+  background-color: $brighten-2;
+  width: 50rem;
+
+  &__heading {
+    background-color: $darken-1;
+    padding: 2rem;
+    font-size: 2.4rem;
+  }
+
+  &__list { 
+    
+  }
+  
+  &__item {
+    padding: 1rem 2rem;
+  }
+  
+  &__name { 
+    font-size: 2rem;
+  }
+  
+  &__date { 
+    margin-bottom: 5px;
+  }
+  
+  &__icon-box { 
+    display: flex;
+  }
+  
+  &__icon { 
+    height: 2rem;
+    width: 2rem;
+    fill: $color-prim-light;
+    
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+  }
+  
+  &__text {
+    padding: 1rem 0;
+    border-bottom: 1px solid $darken-2;
+  }
+}

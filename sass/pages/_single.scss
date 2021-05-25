@@ -1,0 +1,25 @@
+.single {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  
+  &__card {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 4rem;
+
+    margin-bottom: 2rem;
+
+    & > * {
+      background-color: $brighten-2;
+      padding: 2rem;
+      box-shadow: $shadow;
+      border-radius: $bor-rad-sm;
+    }
+  }
+}

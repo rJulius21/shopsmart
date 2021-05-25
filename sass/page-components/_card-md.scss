@@ -1,0 +1,78 @@
+.page-card { 
+  overflow: hidden;
+  background-color: $brighten-2;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: $bor-rad-sm;
+  width: 100%;
+
+
+  &__heading { 
+    margin: -2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: $darken-1;
+    font-weight: 300;
+  }
+
+  &__img-box {
+    margin-top: 4rem;
+  }
+
+  &__img { 
+    width: 100%;
+  }
+
+  &__price { 
+    
+  }
+
+  &__rating {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  &__number { 
+    font-size: 1.8rem;
+    margin-right: 10px;
+  }
+
+  &__icon-box { 
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon { 
+    height: 2rem;
+    width: 2rem;
+    fill: $color-prim-light;
+
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+  }
+
+  &__buy-link { 
+    width: 80%;
+    margin: 2rem auto 1rem;
+    padding: 5px;
+    background-color: $color-prim-light;
+    font-size: 2rem;text-align: center;
+    color: $link-color-dark;
+    border-radius: 10rem;
+    box-shadow: $shadow-sm;
+
+    transition: $transition-1;
+
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: $shadow;
+      filter: brightness(110%);
+    }
+
+    &:active {
+      box-shadow: $shadow-sm;
+    }
+  }
+}

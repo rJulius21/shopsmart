@@ -1,0 +1,21 @@
+.single-media { 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__video-frame { 
+    width: 80rem;
+    height: 60rem;
+
+    display: flex;
+    
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__video {
+    flex: 1;
+  }
+}

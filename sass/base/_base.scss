@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: radial-gradient($color-prim-light, $color-prim-dark);
+  background-size: cover;
+  background-attachment: fixed;
+} 
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 192rem;
+}
+
+img {
+  display: block;
+}

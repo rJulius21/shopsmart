@@ -1,0 +1,71 @@
+.page-slider  { 
+  //background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &__heading  { 
+    //background-color: green;
+    align-self: stretch;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  &__display  { 
+    //background-color: rgb(87, 255, 82);
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow  { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: yellow; 
+    height: 7rem;
+    width: 7rem;
+    font-size: 5rem;
+    line-height: 1;
+    
+    &--left {
+      clip-path: polygon(100% 0, 0 50%, 100% 100%);
+      background-color: $brighten-1;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      transition: $transition-1;
+
+      &:hover{
+        background-color: $brighten-2;
+      }
+    }
+
+    &--right {
+      clip-path: polygon(0 0, 0 100%, 100% 50%);
+      background-color: $brighten-1;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      transition: $transition-1;
+
+      &:hover{
+        background-color: $brighten-2;
+      }
+    }
+  }
+
+  &__cards-box  { 
+    //background-color: purple; 
+    padding: 2rem;
+    display: flex;
+
+    & > * {
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+  }
+}

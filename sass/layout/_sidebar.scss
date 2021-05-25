@@ -1,0 +1,96 @@
+// Food & Drink
+// Office
+// Tech
+// Outdoors
+// Sports
+// Tools
+// Clothing
+// Garden
+// Accessories
+// Home
+
+
+.sidebar { 
+  overflow-x: auto;
+  min-height: 100%;
+  width: 30rem;
+  //padding:  4rem;
+  background-color: $brighten-2;
+  color: $text-color-dark;
+
+  &__heading {
+    padding: 1rem;
+    background-color: $darken-1;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  &__list { 
+    padding: 1rem;
+  }
+
+  &__item { background-color: blue;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $darken-2;
+  }
+  
+  &__item-tier-1 { background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  &__item-heading { 
+    line-height: 1;
+    font-size: 1.6rem;
+    text-indent: 5px;
+  }
+
+  &__arrow-box {
+    margin-right: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    padding: 3px;
+    cursor: pointer;
+
+    transition: $transition-1;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+  
+  &__arrow {
+    background-color: $darken-1;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+  }
+
+  &__sub-cat-box { background-color: rgb(202, 199, 29);
+    //margin-top: -100%;
+    padding: 4px;
+    transform: translateY(-100%);
+    opacity: .7;
+    transition: $transition-1;
+    display: none;
+
+    &:hover {
+      display: block;
+      transform: translateY(0);
+    }
+  }
+
+  &__sub-cat-list { background-color: rgb(15, 80, 15);
+    padding: 4px;
+  }
+
+  &__sub-cat-item {  background-color: rgb(50, 158, 36);
+    padding: 4px;
+    font-size: 1.4rem;
+  }
+}
+
+
+              

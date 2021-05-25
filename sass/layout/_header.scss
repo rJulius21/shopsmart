@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  background-color: $darken-2;
+
+  &__logo-box { 
+    height: 7rem;
+  }
+
+  &__logo { 
+    height: 100%;
+  }
+
+  &__heading-box {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    margin-left: 2rem;
+  }
+  
+  &__heading { 
+    padding: .5rem 1rem;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: $text-color-light;
+  }
+
+  &__nav-box {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 4rem;
+  }
+
+  &__nav-list {
+    display: flex;
+  }
+
+ &__nav-item {
+  padding: .5rem 1rem;
+  font-size: 2rem;
+
+  &:not(:last-child){
+    margin-right: 2.5rem;
+  }
+ }
+}

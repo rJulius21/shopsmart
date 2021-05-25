@@ -1,0 +1,20 @@
+.row { 
+  position: relative;
+  z-index: 0;
+  background-color: $darken-1;
+  justify-content: space-evenly;
+  padding: 6rem 2rem;
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &--flex-r {
+    flex-direction: row;
+  }
+
+  &--flex-c {
+    flex-direction: column;
+  }
+}
