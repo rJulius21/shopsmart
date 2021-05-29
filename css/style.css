@@ -211,15 +211,14 @@ p {
   .sidebar__list {
     padding: 1rem; }
   .sidebar__item {
-    background-color: blue;
+    margin-bottom: 4px;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
   .sidebar__item-tier-1 {
-    background-color: red;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0; }
+    padding: 1rem; }
   .sidebar__item-heading {
     line-height: 1;
     font-size: 1.6rem;
@@ -239,22 +238,15 @@ p {
     width: 100%;
     clip-path: polygon(0 0, 0 100%, 100% 50%); }
   .sidebar__sub-cat-box {
-    background-color: #cac71d;
-    padding: 4px;
-    transform: translateY(-100%);
-    opacity: .7;
-    transition: all 0.3s;
-    display: none; }
-    .sidebar__sub-cat-box:hover {
-      display: block;
-      transform: translateY(0); }
-  .sidebar__sub-cat-list {
-    background-color: #0f500f;
-    padding: 4px; }
+    height: 0rem;
+    overflow: hidden;
+    transition: all 0.3s; }
   .sidebar__sub-cat-item {
-    background-color: #329e24;
     padding: 4px;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    text-indent: 2rem; }
+    .sidebar__sub-cat-item:not(:last-child) {
+      margin-bottom: 3px; }
 
 .page-breadcrumb {
   grid-column: 1 / -1;
