@@ -62,14 +62,16 @@ p {
   height: 52rem;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 2.5rem 0px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 2.5rem 0px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.2); }
   .card-lg h3 {
     background-color: rgba(0, 0, 0, 0.2);
     position: relative;
     padding: 1.5rem;
     font-size: 2.6rem;
     text-align: center;
-    color: #dadcf2; }
+    color: #dadcf2;
+    border: 1px solid rgba(0, 0, 0, 0.2); }
   .card-lg__see-all {
     display: none; }
   .card-lg__content {
@@ -101,9 +103,10 @@ p {
 
 .slider {
   display: flex;
+  justify-content: center;
   align-items: flex-start;
-  padding: 1rem;
-  background-color: #fff; }
+  padding: 5rem;
+  background-image: linear-gradient(135deg, #ffa7a7, white, #a7a7ff); }
 
 .footer {
   position: relative;

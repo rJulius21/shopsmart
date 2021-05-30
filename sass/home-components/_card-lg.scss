@@ -5,19 +5,21 @@
   border-radius: $bor-rad-lg;
   background-color: $darken-1;
   box-shadow: $shadow;
-
+  border: 1px solid $darken-1;
+  
   & h3 { background-color: $darken-1;
     position: relative;
     padding: 1.5rem;
     font-size: 2.6rem;
     text-align: center;
     color: $text-color-light;
+    border: 1px solid $darken-1;
   }
-
+  
   &__see-all {
     display: none;
   }
-
+  
   &__content {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +27,7 @@
     justify-content: space-evenly;
     padding: 2rem 1rem;
   }
-
+  
   &__img-box {
     display: flex;
     flex-direction: column;
