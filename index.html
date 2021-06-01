@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/368f235e2f.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
   <!-- <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script> -->
@@ -47,10 +48,13 @@
       <!-- START SLIDER -->
 
       <div class="slider">
-
-        <img src="img/usflag-full.jpg" alt="us flag">
-        <img src="img/usflag-full.jpg" alt="us flag">
-        <img src="img/usflag-full.jpg" alt="us flag">
+        <div class="slider__img-box">
+          <i class="fas fa-arrow-left slider__arrow" id="home-slider__arrow--left"></i>
+          <i class="fas fa-arrow-right slider__arrow" id="home-slider__arrow--right"></i>
+          <img class="slider__img" src="img/us1.jpg" alt="us flag">
+          <img class="slider__img" src="img/us2.jpg" alt="us flag">
+          <img class="slider__img" src="img/us3.jpg" alt="us flag">
+        </div>
 
       </div>
 
@@ -61,81 +65,110 @@
 
         <!-- START ABOUT US -->
         <div class="row row--flex-r">
-          <h1>ABOUT US / PITCH / IMAGE COMPOSITION</h1>
+
+          <div class="home-pitch">
+            <h1 class="home-pitch__heading">ABOUT US / PITCH / IMAGE COMPOSITION</h1>
+            <p class="home-pitch__text">
+              Our goal is to show you the best products, made right here in the USA, that are available on the most
+              convenient and accessible online market places
+            </p>
+            <div class="home-pitch__composition">
+              <img src="" alt="" class="home-pitch__img">
+            </div>
+          </div>
+
         </div>
         <!-- END ABOUT US -->
 
+        <!-- START CARDS ROW -->
         <div class="row row--flex-r">
+
+          <!-- START CARD-BRANDS -->
           <div class="card-lg">
+
             <div class="card-lg__heading-box">
               <h3>Brands</h3>
               <h3 class="card-lg__see-all">See all Brands</h3>
             </div>
             <div class="card-lg__content">
-              <div class="card-lg__img-box">
-                <img class="card-lg__img card-lg__img--logo"
-                  src="https://leatherman.com/on/demandware.static/Sites-lmusa-Site/-/default/dw536d2709/images/logo_blk.svg"
-                  alt="leatherman logo">
-              </div>
-              <div class="card-lg__img-box">
-                <img class="card-lg__img card-lg__img--logo" src="img/brand-logos/zippo-logo-png.png" alt="zippo logo">
-              </div>
-              <div class="card-lg__img-box">
-                <img class="card-lg__img card-lg__img--logo" src="img/brand-logos/grip6-logo-png.png" alt="grip6 logo">
-              </div>
-              <div class="card-lg__img-box">
-                <img class="card-lg__img card-lg__img--logo" src="img/brand-logos/carhartt-logo-webp.webp"
-                  alt="carhartt logo">
-              </div>
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <img class="card-lg__img card-lg__img--logo"
+                    src="https://leatherman.com/on/demandware.static/Sites-lmusa-Site/-/default/dw536d2709/images/logo_blk.svg"
+                    alt="leatherman logo">
+                </div>
+              </a>
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <img class="card-lg__img card-lg__img--logo" src="img/brand-logos/zippo-logo-png.png"
+                    alt="zippo logo">
+                </div>
+              </a>
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <img class="card-lg__img card-lg__img--logo" src="img/brand-logos/grip6-logo-png.png"
+                    alt="grip6 logo">
+                </div>
+              </a>
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <img class="card-lg__img card-lg__img--logo" src="img/brand-logos/carhartt-logo-webp.webp"
+                    alt="carhartt logo">
+                </div>
+              </a>
             </div>
+
           </div>
+          <!-- END CARD-BRANDS -->
+
+          <!-- START CARD-DEPARTMENTS -->
           <div class="card-lg">
+
             <div class="card-lg__heading-box">
               <h3>Departments</h3>
-              <!-- DEPARTMENTS 
-                    Food & Drink
-                    Office
-                    Tech
-                    Outdoors
-                    Sports
-                    Tools
-                    Clothing
-                    Garden
-                    Accessories
-                    Home
-              -->
               <h3 class="card-lg__see-all">See all Departments</h3>
             </div>
+
             <div class="card-lg__content">
-
-              <div class="card-lg__img-box">
-                <svg class="card-lg__icon">
-                  <use xlink:href="icons/symbol-defs.svg#icon-apparel"></use>
-                </svg>
-                <h4 class="card-lg__icon-label">Clothing</h4>
-              </div>
-              <div class="card-lg__img-box">
-                <svg class="card-lg__icon">
-                  <use xlink:href="icons/symbol-defs.svg#icon-sunglasses1"></use>
-                </svg>
-                <h4 class="card-lg__icon-label">Accessories</h4>
-              </div>
-              <div class="card-lg__img-box">
-                <svg class="card-lg__icon">
-                  <use xlink:href="icons/symbol-defs.svg#icon-home4"></use>
-                </svg>
-                <h4 class="card-lg__icon-label">Home</h4>
-              </div>
-              <div class="card-lg__img-box">
-                <svg class="card-lg__icon">
-                  <use xlink:href="icons/symbol-defs.svg#icon-location-park"></use>
-                </svg>
-                <h4 class="card-lg__icon-label">Garden</h4>
-              </div>
-
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <svg class="card-lg__icon">
+                    <use xlink:href="icons/symbol-defs.svg#icon-apparel"></use>
+                  </svg>
+                  <h4 class="card-lg__icon-label">Clothing</h4>
+                </div>
+              </a>
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <svg class="card-lg__icon">
+                    <use xlink:href="icons/symbol-defs.svg#icon-sunglasses1"></use>
+                  </svg>
+                  <h4 class="card-lg__icon-label">Accessories</h4>
+                </div>
+              </a>
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <svg class="card-lg__icon">
+                    <use xlink:href="icons/symbol-defs.svg#icon-home4"></use>
+                  </svg>
+                  <h4 class="card-lg__icon-label">Home</h4>
+                </div>
+              </a>
+              <a href="#" class="card-lg__link">
+                <div class="card-lg__img-box">
+                  <svg class="card-lg__icon">
+                    <use xlink:href="icons/symbol-defs.svg#icon-location-park"></use>
+                  </svg>
+                  <h4 class="card-lg__icon-label">Garden</h4>
+                </div>
+              </a>
             </div>
+
           </div>
+          <!-- END CARD-DEPARTMENTS -->
+
         </div>
+        <!-- END CARDS ROW -->
 
       </div>
       <!-- END HOME CONTENT -->
