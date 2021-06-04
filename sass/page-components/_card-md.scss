@@ -5,8 +5,7 @@
   flex-direction: column;
   padding: 2rem;
   border-radius: $bor-rad-sm;
-  width: 100%;
-
+  box-sizing: border-box;
 
   &__heading { 
     margin: -2rem;

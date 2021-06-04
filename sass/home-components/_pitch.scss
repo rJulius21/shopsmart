@@ -1,7 +1,9 @@
 .home-pitch{
+  //position: relative;
+  padding: 25rem;
+  color: $text-color-light;
 
   &__heading {
-
   }
 
   &__text {
@@ -14,5 +16,22 @@
 
   &__composition-img{
     
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .85;
+    overflow: hidden;
+  }
+
+  &__video-content{
+    height: 100%;
+        width: 100%;
+        object-fit: cover;
   }
 }

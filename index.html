@@ -14,7 +14,8 @@
 </head>
 
 <body>
-
+  <!-- USES JAVASCRIPT TO WATCH FOR IMAGES TO BE LOADED -->
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <div class="body">
 
     <!-- START HEADER -->
@@ -43,21 +44,159 @@
     </header>
     <!-- END HEADER -->
 
-    <div class="main main--flex-c">
+    <div class="main main--home main--flex-c">
+
+      <img src="img/splash/splashtall1-full.jpg" alt="" class="main__bg-image">
 
       <!-- START SLIDER -->
-
       <div class="slider">
-        <div class="slider__img-box">
+
+
+        <div class="slider__container">
           <i class="fas fa-arrow-left slider__arrow" id="home-slider__arrow--left"></i>
           <i class="fas fa-arrow-right slider__arrow" id="home-slider__arrow--right"></i>
-          <img class="slider__img" src="img/us1.jpg" alt="us flag">
-          <img class="slider__img" src="img/us2.jpg" alt="us flag">
-          <img class="slider__img" src="img/us3.jpg" alt="us flag">
+
+          <!-- <div class="slider__slide">
+            <img class="slider__slide-img" id="lastClone" src="img/us3.jpg" alt="us flag">
+            <img class="slider__slide-img" src="img/us1.jpg" alt="us flag">
+            <img class="slider__slide-img" src="img/us2.jpg" alt="us flag">
+            <img class="slider__slide-img" src="img/us3.jpg" alt="us flag">
+            <img class="slider__slide-img" id="firstClone" src="img/us1.jpg" alt="us flag">
+          </div> -->
+
+          <div class="slider__slide">
+
+            <!--  START SLIDER CARD  -->
+            <div id="lastClone" class="slider__card">
+
+              <div class="slider__card-text-box">
+                <h3 class="slider__card-heading">Product Name</h3>
+                <div class="slider__card-stars-box">
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                </div>
+                <a href="#" class="slider__link">See details!</a>
+              </div>
+
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+
+            </div>
+            <!--  END SLIDER CARD  -->
+
+            <!--  START SLIDER CARD  -->
+            <div class="slider__card">
+
+              <div class="slider__card-text-box">
+                <h3 class="slider__card-heading">Product Name</h3>
+                <div class="slider__card-stars-box">
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                </div>
+                <a href="#" class="slider__link">See details!</a>
+              </div>
+
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+
+            </div>
+            <!--  END SLIDER CARD  -->
+
+            <!--  START SLIDER CARD  -->
+            <div class="slider__card">
+
+              <div class="slider__card-text-box">
+                <h3 class="slider__card-heading">Product Name</h3>
+                <div class="slider__card-stars-box">
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                </div>
+                <a href="#" class="slider__link">See details!</a>
+              </div>
+
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+
+            </div>
+            <!--  END SLIDER CARD  -->
+
+            <!--  START SLIDER CARD  -->
+            <div class="slider__card">
+
+              <div class="slider__card-text-box">
+                <h3 class="slider__card-heading">Product Name</h3>
+                <div class="slider__card-stars-box">
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                </div>
+                <a href="#" class="slider__link">See details!</a>
+              </div>
+
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+
+            </div>
+            <!--  END SLIDER CARD  -->
+
+            <!--  START SLIDER CARD  -->
+            <div id="firstClone" class="slider__card">
+
+              <div class="slider__card-text-box">
+                <h3 class="slider__card-heading">Product Name</h3>
+                <div class="slider__card-stars-box">
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                  <div class="slider__card-icon"></div>
+                </div>
+                <a href="#" class="slider__link">See details!</a>
+              </div>
+
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+              <div class="slider__card-img">
+                placeholder image
+              </div>
+
+            </div>
+            <!--  END SLIDER CARD  -->
+          </div>
+
+
+
         </div>
 
       </div>
-
       <!-- END SLIDER -->
 
       <!-- START HOME CONTENT-->
@@ -67,7 +206,13 @@
         <div class="row row--flex-r">
 
           <div class="home-pitch">
-            <h1 class="home-pitch__heading">ABOUT US / PITCH / IMAGE COMPOSITION</h1>
+            <div class="home-pitch__video">
+              <video class="home-pitch__video-content" autoplay muted loop>
+                <source src="img/splash/sharp.mp4" type="video/mp4">
+                Your browser is not supported!
+              </video>
+            </div>
+            <h1 class="home-pitch__heading">Shop wisely friends.</h1>
             <p class="home-pitch__text">
               Our goal is to show you the best products, made right here in the USA, that are available on the most
               convenient and accessible online market places
@@ -222,6 +367,8 @@
     <!-- END FOOTER -->
 
   </div>
+
+  <script src="js/home-slider.js"></script>
 </body>
 
 </html>
