@@ -1,21 +1,61 @@
-.home-pitch{
-  //position: relative;
-  padding: 25rem;
+.home-pitch{ overflow: hidden;
+  position: relative;
+  display: flex;
+  padding: 25rem 15rem 12rem;
   color: $text-color-light;
+  justify-content: center;
+  background-image: $rwb-gradient;
 
   &__heading {
+    margin-bottom: 1rem;
+    font-size: 3.8rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  
+  &__text-box {  
+   // border: 5px solid red;
+    position: relative;
+    z-index: 5;
+    width: 50%;
+    text-align: center;
+    text-shadow: $text-shadow;
   }
 
   &__text {
+    font-size: 2.2rem;
+  }
 
+  &__logo-box {
+    position: absolute;
+    width:100%;
+    top: 12%;
+    left: 0;
+  }
+  
+  &__logo{
+    margin: 0 auto;
+    transform: scale(1.0);
+    opacity:.45;
+    transition: $transition-1;
+    
+    &:hover{
+      opacity: .75;
+      transform: scale(1.1) ;
+    }
   }
 
   &__composition {
-
+     position: absolute;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     left: 50%;
+     opacity: .15;
+     
   }
 
-  &__composition-img{
-    
+  &__composition-img1 {
+    height: 100%;
   }
 
   &__video {
@@ -24,9 +64,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -1;
-    opacity: .85;
+    z-index: 0;
+    opacity: .5;
     overflow: hidden;
+    filter:grayscale(50%);
   }
 
   &__video-content{

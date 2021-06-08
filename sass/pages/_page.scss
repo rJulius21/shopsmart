@@ -8,11 +8,11 @@
 
   padding: 2rem;
 
-  &__main-grid {
+  &__main-grid { 
     grid-column: 1 / -1 ;
-
+    justify-items: center;
     display: grid;
-    grid-template-columns: repeat(5, 1fr );
-    grid-gap: 4rem;
+    grid-template-columns: repeat(4, 1fr );
+
     }
 }

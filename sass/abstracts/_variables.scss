@@ -3,16 +3,20 @@
 $color-prim-dark: #0066ff;
 $color-prim-light: #449cee;
 
+$color-prim-dark: #4a93ff;
+$color-prim-light: #90ade4;
+
 $color-white: #f7f7f7;
 $color-black: #0f0f0f;
-$darken-1: rgba(0,0,0,.2);
+$darken-1: rgba(0,0,0,.1);
 $darken-2: rgba(0,0,0,.4);
-$brighten-1: rgba(255,255,255,.15);
+$brighten-1: rgba(255,255,255,.25);
 $brighten-2:rgba(255,255,255,.9);
 
 // FONT PROPERTIES
 $text-color-dark: #37394b;
 $text-color-light: #dadcf2;
+$text-shadow: 2px 2px 2px #000000;
 
 // LINK PROPERTIES
 $link-color-light: #a8b0f7;
@@ -20,9 +24,12 @@ $link-color-dark: #272942;
 
 // BOX PROPERTIES
 $bor-rad-lg: 10px;
-$bor-rad-sm: 4px;
+$bor-rad-sm: 2px;
 $shadow: 0 0 2.5rem 0px $darken-2;
 $shadow-sm: 0 0 1.5rem 0px $darken-2;
 
 // EFFECTS
 $transition-1: all .3s;
+
+// SPECIAL COLORS
+$rwb-gradient: linear-gradient(135deg, rgb(255, 120, 120), rgb(255, 255, 255), rgb(120, 120, 255));
