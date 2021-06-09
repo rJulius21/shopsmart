@@ -39,7 +39,7 @@
     display: flex;
   }
   
-  &__nav-item {background-color: green;
+  &__nav-item {
     position: relative;
     font-size: 2rem;
     
@@ -48,26 +48,37 @@
     }
   }
   
-  &__nav-link { background-color: red;
+  ///// HEADER BUTTONS
+  &__nav-link { 
+    background-color: $color-prim-light;
     color: $text-color-light;
     padding: 4px 1rem;
     transition: $transition-1;
     width: 14rem;
+    border-radius: $bor-rad-sm;
+    font-size: 2rem;
 
-    &:hover {
-      background-color:$brighten-1;
+    &:hover, &:active {
+      background-color: $color-prim-dark;
+      cursor: pointer;
     }
   }
 
-  &__nav-drop-1 { 
+  //// CONTANER FOR FIRST LEVEL DROP MENU
+  &__nav-drop-1 { background-color: red;
+    overflow: hidden;
     position: absolute;
+    display: block;
+    height:0px;
   }
 
-  &__nav-drop-1-list { background-color: rgb(134, 108, 156); padding: 5px;
+  &__nav-drop-1-list { 
+    background-color: $color-prim-dark;
     display: grid;
     grid-auto-flow:column;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(9, max-content);
     grid-auto-columns: max-content;
+    padding: 5px;
     
   }
 
@@ -75,45 +86,45 @@
     position: relative;
     display: flex;
     margin-bottom: 5px;
-    margin-right: 5px;
   }
 
   &__nav-drop-1-link { background-color: orange; padding:5px;
     flex: 1;
     padding-right: 4rem;
+    font-size: 1.6rem;
 
     &:hover{
       background-color: $brighten-1;
     }
   }
 
-  /////////// STYLING FOR LEVEL 2 DROP DOWN ITEMS
-
+  //// CONTANER FOR SECOND LEVEL DROP MENU
   &__nav-drop-2 { 
     position: absolute;
     top: 0;
     right: 0;
     z-index: 20;
-    transform: translate(100%, 1rem);
+    transform: translate(96%, 1.6rem);
   }
 
-  &__nav-drop-2-list { background-color: rgb(35, 126, 50); padding: 5px;
-    display: grid;
+  &__nav-drop-2-list { 
+    background-color: $color-white;
     grid-auto-flow:column;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(9, max-content);
     grid-auto-columns: max-content;
-    
+    padding: 5px;
   }
 
   &__nav-drop-2-item { 
     display: flex;
     margin-bottom: 5px;
-    margin-right: 5px;
+    
   }
 
   &__nav-drop-2-link { background-color: rgb(14, 119, 119); padding:5px;
     flex: 1;
     padding-right: 4rem;
+    font-size: 1.4rem;
 
     &:hover{
       background-color: $brighten-1;
