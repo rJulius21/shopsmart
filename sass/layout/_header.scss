@@ -57,6 +57,7 @@
     width: 14rem;
     border-radius: $bor-rad-sm;
     font-size: 2rem;
+    font-weight: 400;
 
     &:hover, &:active {
       background-color: $color-prim-dark;
@@ -65,11 +66,10 @@
   }
 
   //// CONTANER FOR FIRST LEVEL DROP MENU
-  &__nav-drop-1 { background-color: red;
-    overflow: hidden;
+  &__nav-drop-1 { 
     position: absolute;
-    display: block;
-    height:0px;
+    margin-top: 3px;
+    display: none;
   }
 
   &__nav-drop-1-list { 
@@ -79,6 +79,7 @@
     grid-template-rows: repeat(9, max-content);
     grid-auto-columns: max-content;
     padding: 5px;
+    padding-bottom: 0;
     
   }
 
@@ -88,13 +89,17 @@
     margin-bottom: 5px;
   }
 
-  &__nav-drop-1-link { background-color: orange; padding:5px;
+  &__nav-drop-1-link { 
+    background-color: $brighten-1; 
+    padding:5px;
     flex: 1;
     padding-right: 4rem;
     font-size: 1.6rem;
+    border-radius: $bor-rad-sm;
+    color:$text-color-light;
 
     &:hover{
-      background-color: $brighten-1;
+      background-color: $darken-1;
     }
   }
 
@@ -105,10 +110,11 @@
     right: 0;
     z-index: 20;
     transform: translate(96%, 1.6rem);
+    display: none;
   }
 
   &__nav-drop-2-list { 
-    background-color: $color-white;
+    background-color: $color-prim-light;
     grid-auto-flow:column;
     grid-template-rows: repeat(9, max-content);
     grid-auto-columns: max-content;
@@ -121,13 +127,15 @@
     
   }
 
-  &__nav-drop-2-link { background-color: rgb(14, 119, 119); padding:5px;
+  &__nav-drop-2-link { 
+    background-color: $brighten-1; 
+    padding:5px;
     flex: 1;
     padding-right: 4rem;
     font-size: 1.4rem;
 
     &:hover{
-      background-color: $brighten-1;
+      background-color: $darken-1;
     }
   }
 }

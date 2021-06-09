@@ -368,43 +368,46 @@ a {
     transition: all 0.3s;
     width: 14rem;
     border-radius: 2px;
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-weight: 400; }
     .header__nav-link:hover, .header__nav-link:active {
       background-color: #4a93ff;
       cursor: pointer; }
   .header__nav-drop-1 {
-    background-color: red;
-    overflow: hidden;
     position: absolute;
-    display: block;
-    height: 0px; }
+    margin-top: 3px;
+    display: none; }
   .header__nav-drop-1-list {
     background-color: #4a93ff;
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: repeat(9, max-content);
     grid-auto-columns: max-content;
-    padding: 5px; }
+    padding: 5px;
+    padding-bottom: 0; }
   .header__nav-drop-1-item {
     position: relative;
     display: flex;
     margin-bottom: 5px; }
   .header__nav-drop-1-link {
-    background-color: orange;
+    background-color: rgba(255, 255, 255, 0.25);
     padding: 5px;
     flex: 1;
     padding-right: 4rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    border-radius: 2px;
+    color: #dadcf2; }
     .header__nav-drop-1-link:hover {
-      background-color: rgba(255, 255, 255, 0.25); }
+      background-color: rgba(0, 0, 0, 0.1); }
   .header__nav-drop-2 {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 20;
-    transform: translate(96%, 1.6rem); }
+    transform: translate(96%, 1.6rem);
+    display: none; }
   .header__nav-drop-2-list {
-    background-color: #f7f7f7;
+    background-color: #90ade4;
     grid-auto-flow: column;
     grid-template-rows: repeat(9, max-content);
     grid-auto-columns: max-content;
@@ -413,13 +416,13 @@ a {
     display: flex;
     margin-bottom: 5px; }
   .header__nav-drop-2-link {
-    background-color: #0e7777;
+    background-color: rgba(255, 255, 255, 0.25);
     padding: 5px;
     flex: 1;
     padding-right: 4rem;
     font-size: 1.4rem; }
     .header__nav-drop-2-link:hover {
-      background-color: rgba(255, 255, 255, 0.25); }
+      background-color: rgba(0, 0, 0, 0.1); }
 
 .main {
   position: relative;
