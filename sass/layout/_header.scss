@@ -51,7 +51,7 @@
   ///// HEADER BUTTONS
   &__nav-link { 
     background-color: $color-prim-light;
-    color: $text-color-light;
+    color: $text-color-dark;
     padding: 4px 1rem;
     transition: $transition-1;
     width: 14rem;
@@ -70,10 +70,11 @@
     position: absolute;
     margin-top: 3px;
     display: none;
+    box-shadow: $shadow;
   }
 
   &__nav-drop-1-list { 
-    background-color: $color-prim-dark;
+    background-color: $color-prim-light;
     display: grid;
     grid-auto-flow:column;
     grid-template-rows: repeat(9, max-content);
@@ -96,7 +97,7 @@
     padding-right: 4rem;
     font-size: 1.6rem;
     border-radius: $bor-rad-sm;
-    color:$text-color-light;
+    color:$text-color-dark;
 
     &:hover{
       background-color: $darken-1;
@@ -109,16 +110,29 @@
     top: 0;
     right: 0;
     z-index: 20;
-    transform: translate(96%, 1.6rem);
+    transform: translate(100%, 1.6rem);
     display: none;
+    background-color: $color-prim-dark;
+    padding: 5px;
+    padding-bottom: 0;
+    box-shadow: $shadow;
   }
 
   &__nav-drop-2-list { 
-    background-color: $color-prim-light;
+    position: relative;
     grid-auto-flow:column;
     grid-template-rows: repeat(9, max-content);
     grid-auto-columns: max-content;
-    padding: 5px;
+
+    &::before{
+      position:absolute;
+      content:" ";
+      height: 1.4rem;
+      width: 1.4rem;
+      border-radius: 3rem;
+      background-color: $color-prim-dark;
+      transform: translate(-90%, -60%);
+    }
   }
 
   &__nav-drop-2-item { 
