@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   background-image: radial-gradient(#b7c6e2, #4a93ff);
@@ -291,6 +294,7 @@ a {
   right: 22rem; }
 
 .footer {
+  margin-top: 9rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -299,17 +303,32 @@ a {
   .footer__links {
     display: flex;
     flex: 1;
-    margin: 1rem;
-    padding: 2rem 0rem; }
+    margin: 0 1rem;
+    padding: 0rem;
+    transition: all 0.3s; }
+    @media only screen and (max-width: 31.25em) {
+      .footer__links {
+        flex-direction: column; } }
     .footer__links--left {
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      text-align: right;
+      transition: all 0.3s; }
+      @media only screen and (max-width: 31.25em) {
+        .footer__links--left {
+          text-align: center; } }
     .footer__links--right {
-      justify-content: flex-start; }
+      justify-content: flex-start;
+      transition: all 0.3s; }
+      @media only screen and (max-width: 31.25em) {
+        .footer__links--right {
+          text-align: center; } }
   .footer__link {
     margin-bottom: 8px;
     padding: .2rem 1rem;
     font-size: 1.4rem;
     color: #272942; }
+    .footer__link:hover, .footer__link:active {
+      color: #a8b0f7; }
   .footer__logos {
     display: flex;
     align-items: center;

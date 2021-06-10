@@ -1,4 +1,4 @@
-.footer { 
+.footer { margin-top: 9rem; // REMOVE THIS MARGIN ON PRODUCTION SITE
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,15 +8,31 @@
   &__links { 
     display: flex;
     flex: 1;
-    margin: 1rem;
-    padding: 2rem 0rem;
+    margin: 0 1rem;
+    padding: 0rem;
+    transition: $transition-1;
+
+    @media only screen and (max-width: $phone) {
+      flex-direction: column;
+    }
     
     &--left { 
       justify-content: flex-end;
+      text-align: right;
+      transition: $transition-1;
+
+      @media only screen and (max-width: $phone) {
+        text-align: center;
+      }
     }
 
     &--right{ 
       justify-content: flex-start;
+      transition: $transition-1;
+
+      @media only screen and (max-width: $phone) {
+        text-align: center;
+      }
     }
   }
 
@@ -25,6 +41,10 @@
     padding: .2rem 1rem;
     font-size: 1.4rem;
     color: $link-color-dark;
+    
+    &:hover, &:active {
+      color: $link-color-light;
+    }
   }
 
   &__logos {

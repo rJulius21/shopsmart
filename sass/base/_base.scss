@@ -1,3 +1,9 @@
+
+$bp-largest: 75em;     // 1200px
+
+$full-desktop: 120em; // 1920px
+$phone: 31.25em; // 500px
+
 *,
 *::after,
 *::before {
@@ -7,7 +13,11 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem == 10px
+
+  @media only screen and (max-width: $phone) {
+    font-size: 50%; // 1rem == 8px
+  }
 }
 
 body {
