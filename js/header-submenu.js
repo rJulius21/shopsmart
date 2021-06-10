@@ -5,7 +5,9 @@ function operateSubMenu() {
   const submenuOpeners = document.querySelectorAll('.header__nav-drop-1-link');
   const submenus = document.querySelectorAll('.header__nav-drop-2');
 
+  ////////////////////////////////////////////////////////////////
   // FUNCTION DEFINITIONS
+
   function hideItem(item, index, arr) {
     //Hide all sub-menus
     item.nextElementSibling.style.display = 'none';
@@ -32,7 +34,6 @@ function operateSubMenu() {
   } // END closeSubmenuOnOutClick
 
   ///////////////////////////////////////////////////
-
   // START CODE EXECUTION
   submenus.forEach(closeSubmenuOnOutClick);
   submenuOpeners.forEach(hideItem);
