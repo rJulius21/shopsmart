@@ -1,13 +1,3 @@
-// Food & Drink
-// Office
-// Tech
-// Outdoors
-// Sports
-// Tools
-// Clothing
-// Garden
-// Accessories
-// Home
 
 
 .sidebar { 
@@ -16,6 +6,10 @@
   width: 30rem;
   background-color: $brighten-2;
   color: $text-color-dark;
+
+  @media only screen and(max-width:$phone){
+    display: none;
+  }
 
   &__heading { 
     padding: 1rem;
@@ -73,10 +67,6 @@
     overflow: hidden;
     transition: $transition-1;
   
-
-    // &--expand {
-    //   height: initial;
-    // }
   }
 
   &__sub-cat-list {

@@ -32,6 +32,10 @@ ol {
 h3 {
   font-weight: 300;
   letter-spacing: 1px;
+
+  @media only screen and (max-width:$phone){
+    font-weight: 400;
+  }
 }
 
 p {

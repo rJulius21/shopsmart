@@ -1,18 +1,28 @@
-.page { 
+.page {
   flex: 1;
 
   display: grid;
   grid-template-rows: repeat (4, 100px);
   grid-template-columns: repeat (4, 1fr);
   grid-gap: 20px;
-
   padding: 2rem;
+
+  @media only screen and (max-width:$phone){
+    padding: 1rem;
+    grid-template-columns: repeat (1, 1fr);
+  }
 
   &__main-grid { 
     grid-column: 1 / -1 ;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr );
+    grid-gap:2rem;
+
+    @media only screen and (max-width:$phone){
+      grid-template-columns: repeat(2, 1fr );
+      
+    }
 
     }
 }

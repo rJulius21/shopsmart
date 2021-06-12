@@ -1,5 +1,4 @@
 .page-slider  { 
-  //border: 10px solid orange;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,11 +16,15 @@
   &__display  { 
     overflow: hidden;
     position: relative;
-    //border: 5px solid blue;
     margin: 0 auto;
     width: 94rem;
     height: 51rem;
     transition: $transition-1;
+    
+    @media only screen and (max-width:$phone){
+      max-width:30rem;
+      height: 410px;
+    }
   }
 
   &__arrow  { 
@@ -35,6 +38,12 @@
     cursor: pointer;
     background-color: $brighten-1;
     transition: $transition-1;
+
+    @media only screen and (max-width:$phone){
+      background-color: $brighten-2;
+      height: 5rem;
+      width: 5rem;
+    }
     
     &:hover{
       background-color: $brighten-2;
@@ -44,27 +53,44 @@
       top: 45%;
       left: 10%;
       clip-path: polygon(100% 0, 0 50%, 100% 100%);
+
+      @media only screen and (max-width:$phone){
+        left: 2px;
+      }
     }
 
     &--right {
       top: 45%;
       right: 10%;
       clip-path: polygon(0 0, 0 100%, 100% 50%);
+
+      @media only screen and (max-width:$phone){
+        right: 2px;
+      }
     }
   }
 
   &__cards-box  { 
     position: absolute;
-    //border: 10px solid purple;
     display: flex;
     transition: $transition-1;
   
     & > * {
       width: 30rem;
 
+      @media only screen and (max-width:$phone){
+        max-width: 30rem;
+      }
+
       &:not(:last-child) {
-        margin-right: 2rem;
+        margin-right: 20px;
+
+        @media only screen and (max-width:$phone){
+          //margin-right: 3rem;
+        }
+  
       }
     }
   }
+
 }

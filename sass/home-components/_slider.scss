@@ -4,20 +4,26 @@
   justify-content: center;
   align-items: center;
   padding: 8rem;
-  //background-image: linear-gradient(135deg, rgb(255, 195, 195), rgb(255, 255, 255), rgb(194, 194, 255));
-  //background-attachment: fixed;
 
-  &__container {
+  @media only screen and (max-width:$phone){
+    padding: 4rem 0;
+  }
+
+  &__container { 
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 1150px;
-    background-color: $color-black;
     font-size: 8rem;
     box-shadow: $shadow;
     border-radius: $bor-rad-sm;
+
+    @media only screen and (max-width:$phone){
+      width: 280px;
+      height: 60rem;
+    }
   }
   
   &__slide {
@@ -26,6 +32,10 @@
     align-items: center;
     width: 100%;
     height: 100%;
+
+    @media only screen and (max-width:$phone){
+      align-items: flex-start;
+    }
   }
 
   &__arrow {
@@ -37,6 +47,10 @@
     cursor: pointer;
     transition: $transition-1;
 
+    @media only screen and (max-width:$phone){
+      align-items: flex-start;
+    }
+
     &:hover{
       filter:  brightness(125%);
       transform: translateY(-50%) scale(1.2);
@@ -44,17 +58,25 @@
   }
 
   &__card { 
-   
     display: flex;
     width: 100%;
+
+    @media only screen and (max-width:$phone){
+      flex-direction: column;
+      width: 280px;
+    }
   }
   
   &__card-img {
-     
     height:400px;
     width:400px;
     text-align:center;
     font-size: 3rem;
+
+    @media only screen and (max-width:$phone){
+      width:100%;
+      height: inherit;
+    }
   }
 
   &__img {
@@ -69,10 +91,16 @@
     align-items: center;
     justify-content: space-between;
     width: 350px;
+    
+    @media only screen and (max-width:$phone){
+      flex: inherit;
+      width: 280px;
+      height: 195px;
+    }
   }
   
   &__card-heading {
-    background-color:$darken-1;
+    background-color:$brighten-1;
     margin: 0;  
     width:100%;
     padding: 10px 0;
@@ -90,6 +118,11 @@
     height:25px;
     width:25px;
     fill: $color-prim-dark;
+
+    @media only screen and (max-width:$phone){
+      width: 15px;
+      height: 15px;
+    }
     
     &:not(:last-child){
       margin-right:3px;
@@ -98,13 +131,16 @@
   
   &__link {
     border:5px solid $color-prim-dark;
-    //background-color:$color-prim-light;
     margin-bottom:20px;
     padding:2rem;
     font-size: 3rem;
     border-radius: $bor-rad-sm;
     transition: $transition-1;
     color: $link-color-dark;
+
+    @media only screen and (max-width:$phone){
+      padding: 1rem;
+    }
 
     &:hover {
       background-color: $color-prim-dark;
@@ -122,9 +158,21 @@
 #home-slider__arrow--left{
   top: 42%;
   left: 22rem;
+
+  @media only screen and (max-width:$phone){
+    top: 42%;
+    left: 1rem;
+    transform: scale(.8);
+  }
 }
 
 #home-slider__arrow--right{
   top: 42%;
   right: 22rem;
+
+  @media only screen and (max-width:$phone){
+    top: 42%;
+    right: 1rem;
+    transform: scale(.8);
+  }
 }
