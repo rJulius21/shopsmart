@@ -1,3 +1,46 @@
+
+
+#header__nav-open {
+  display: none;
+ 
+
+  @media only screen and(max-width:$phone){
+    position: absolute;
+    left:1rem;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $brighten-1;
+    height: 4rem;
+    width: 8rem;
+    box-shadow:$shadow ;
+    border-radius: $bor-rad-sm;
+    border: 1px solid $brighten-2;
+    cursor: pointer;
+  }
+}
+
+#header__nav-close {
+  display: none;
+
+  @media only screen and(max-width:$phone){
+    position: absolute;
+    right: -22%;
+    top: 0;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10rem;
+    box-shadow:$shadow-sm;
+    background-image: url("/img/x-blacksh.png");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid $darken-2;
+    opacity: .7;
+    cursor: pointer;
+  }
+}
+
 .header {
   position: fixed;
   z-index: 100;
@@ -12,6 +55,7 @@
     padding:1rem 1rem;
     flex-direction: column;
   }
+
   &__logo-box { 
     height: 7rem;
 
@@ -67,6 +111,7 @@
     position: relative;
     
     @media only screen and (max-width: $phone) { 
+      display: none;
       order: 4;
       align-items: stretch;
       position: absolute;
@@ -75,7 +120,7 @@
       width: 50vw;
       margin: 0;
       padding: 1rem;
-
+      border: 1px solid $darken-2;
       box-shadow: $shadow;
     }
   }
@@ -126,6 +171,19 @@
       cursor: pointer;
     }
   }
+
+  &__nav-open-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $text-color-light;
+  }
+
+  &__nav-close-text {
+  }
   
   //// CONTANER FOR FIRST LEVEL DROP MENU
   &__nav-drop-1 { 
@@ -133,12 +191,13 @@
     margin-top: 3px;
     display: none;
     box-shadow: $shadow;
+    background-color: $darken-2;
     
     @media only screen and (max-width:$phone){
       top: 4rem;
-      left: 4rem;
+      left: 10vw;
       z-index: 100;
-      width: 50vw;
+      width: 80vw;
       overflow-y: scroll;
       
     }
@@ -220,14 +279,15 @@
     padding: 5px;
     padding-bottom: 0;
     box-shadow: $shadow;
-
+    
     transition: $transition-1;
-
+    
     @media only screen and (max-width:$phone){
       position: relative;
       transform: translate(0, 0);
       margin-top: 1rem;
       width: 90%;
+      background-color: $brighten-1;
       
     }
   }

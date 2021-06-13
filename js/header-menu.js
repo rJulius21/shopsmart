@@ -1,4 +1,24 @@
+function toggleMobileMenu() {
+  // UI VARIABLES
+  const nav = document.getElementById('header__nav-box');
+  const open = document.getElementById('header__nav-open');
+  const close = document.getElementById('header__nav-close');
 
+  //nav.style.display = 'none';
+
+  close.addEventListener('click', () => {
+    nav.style.display = 'none';
+    console.log('close fired');
+  })
+
+  open.addEventListener('click', () => {
+    nav.style.display = 'inherit';
+    close.style.display = 'inherit';
+    console.log('open fired');
+  })
+}
+
+toggleMobileMenu();
 
 function dropMenu() {
   // UI VARS
